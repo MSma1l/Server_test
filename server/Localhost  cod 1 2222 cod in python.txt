@@ -8,6 +8,7 @@ def startMyServer():
 
         while True :
             print('Working...')
+            print('http://127.0.0.1:2222/home.html')
             client_socket, address = server.accept()
             data = client_socket.recv(1024).decode('utf-8')
             # print(data)
